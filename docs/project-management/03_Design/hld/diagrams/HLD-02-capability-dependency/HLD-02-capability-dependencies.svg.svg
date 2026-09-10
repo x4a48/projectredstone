@@ -1,0 +1,306 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2360" viewBox="0 0 1800 2360">
+<rect width="1800" height="2360" fill="#eef2f6"/>
+<style>text{font-family:Arial,sans-serif;fill:#182d43} .muted{fill:#54667a}</style>
+<text x="48" y="51" font-size="18" font-weight="bold">PROJECT REDSTONE / NORTHWIND OUTDOOR LTD.</text>
+<text x="48" y="104" font-size="38" font-weight="bold">HLD-02  |  Conceptual Capability Dependency View</text>
+<text x="48" y="142" font-size="20" font-weight="normal">Draft v0.1  •  08 September 2026  •  19 capabilities  •  75 recorded dependencies</text>
+<text x="48" y="182" font-size="21" font-weight="normal">Read each panel: capability → depends on target CAP-ID. Targets refer to panels with that ID.</text>
+<text x="48" y="221" font-size="20" font-weight="bold" style="fill:#176b86">H  Hard technical</text>
+<text x="438" y="221" font-size="20" font-weight="bold" style="fill:#8b620c">S  Soft technical</text>
+<text x="828" y="221" font-size="20" font-weight="bold" style="fill:#7855a2">O  Operational</text>
+<text x="1218" y="221" font-size="20" font-weight="bold">*  Design-dependent basis</text>
+<text x="48" y="253" font-size="18" font-weight="normal">References preserve every matrix relationship; this is a logical view, not a traffic flow or deployment topology.</text>
+<g id="CAP-001"><rect x="48" y="285" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(68,305) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+  <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+  <circle cx="9" cy="7" r="4" />
+</g>
+<text x="118" y="316" font-size="17" font-weight="bold" style="fill:#176b86">CAP-001</text>
+<text x="118" y="342" font-size="20" font-weight="bold">Identity &amp; Access Management</text>
+<text x="68" y="396" font-size="18" font-weight="bold" style="fill:#176b86">H →</text>
+<text x="118" y="396" font-size="18" font-weight="normal" style="fill:#176b86">CAP-009, CAP-015, CAP-004, CAP-014*</text>
+<text x="68" y="425" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="118" y="425" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-016</text>
+<text x="68" y="535" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 2–6</text>
+</g>
+<g id="CAP-002"><rect x="622" y="285" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(642,305) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 14v2.2l1.6 1" />
+  <path d="M16 2v3" />
+  <path d="M21 7.338V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h2.338" />
+  <path d="M3 9h5.859" />
+  <path d="M8 2v3" />
+  <circle cx="16" cy="16" r="6" />
+</g>
+<text x="692" y="316" font-size="17" font-weight="bold" style="fill:#176b86">CAP-002</text>
+<text x="692" y="342" font-size="20" font-weight="bold">Automation &amp; Scheduled Operations</text>
+<text x="642" y="396" font-size="18" font-weight="bold" style="fill:#176b86">H →</text>
+<text x="692" y="396" font-size="18" font-weight="normal" style="fill:#176b86">CAP-004, CAP-015</text>
+<text x="642" y="425" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="692" y="425" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-009</text>
+<text x="642" y="454" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="692" y="454" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-005</text>
+<text x="642" y="535" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 7–10</text>
+</g>
+<g id="CAP-003"><rect x="1196" y="285" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(1216,305) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+</g>
+<text x="1266" y="316" font-size="17" font-weight="bold" style="fill:#176b86">CAP-003</text>
+<text x="1266" y="342" font-size="20" font-weight="bold">File &amp; Data Services</text>
+<text x="1216" y="396" font-size="18" font-weight="bold" style="fill:#176b86">H →</text>
+<text x="1266" y="396" font-size="18" font-weight="normal" style="fill:#176b86">CAP-009, CAP-004, CAP-015, CAP-001</text>
+<text x="1216" y="425" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="1266" y="425" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-005</text>
+<text x="1216" y="535" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 11–15</text>
+</g>
+<g id="CAP-004"><rect x="48" y="563" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(68,583) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <ellipse cx="12" cy="5" rx="9" ry="3" />
+  <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+  <path d="M3 12A9 3 0 0 0 21 12" />
+</g>
+<text x="118" y="594" font-size="17" font-weight="bold" style="fill:#176b86">CAP-004</text>
+<text x="118" y="620" font-size="20" font-weight="bold">Storage Provisioning/Management</text>
+<text x="68" y="674" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="118" y="674" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-015*, CAP-009*</text>
+<text x="68" y="703" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="118" y="703" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-016</text>
+<text x="68" y="813" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 16–18</text>
+</g>
+<g id="CAP-005"><rect x="622" y="563" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(642,583) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 5h1" />
+  <path d="M3 12h1" />
+  <path d="M3 19h1" />
+  <path d="M8 5h1" />
+  <path d="M8 12h1" />
+  <path d="M8 19h1" />
+  <path d="M13 5h8" />
+  <path d="M13 12h8" />
+  <path d="M13 19h8" />
+</g>
+<text x="692" y="594" font-size="17" font-weight="bold" style="fill:#176b86">CAP-005</text>
+<text x="692" y="620" font-size="20" font-weight="bold">Logging &amp; Audit</text>
+<text x="642" y="674" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="692" y="674" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-014</text>
+<text x="642" y="813" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 19–19</text>
+</g>
+<g id="CAP-006"><rect x="1196" y="563" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(1216,583) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
+</g>
+<text x="1266" y="594" font-size="17" font-weight="bold" style="fill:#176b86">CAP-006</text>
+<text x="1266" y="620" font-size="20" font-weight="bold">Monitoring &amp; Alerting</text>
+<text x="1216" y="674" font-size="18" font-weight="bold" style="fill:#176b86">H →</text>
+<text x="1266" y="674" font-size="18" font-weight="normal" style="fill:#176b86">CAP-015</text>
+<text x="1216" y="703" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="1266" y="703" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-001*, CAP-005*, CAP-011, CAP-014</text>
+<text x="1216" y="813" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 20–24</text>
+</g>
+<g id="CAP-007"><rect x="48" y="841" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(68,861) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="20" height="5" x="2" y="3" rx="1" />
+  <path d="M4 8v11a2 2 0 0 0 2 2h2" />
+  <path d="M20 8v11a2 2 0 0 1-2 2h-2" />
+  <path d="m9 15 3-3 3 3" />
+  <path d="M12 12v9" />
+</g>
+<text x="118" y="872" font-size="17" font-weight="bold" style="fill:#176b86">CAP-007</text>
+<text x="118" y="898" font-size="20" font-weight="bold">Backup &amp; Recovery</text>
+<text x="68" y="952" font-size="18" font-weight="bold" style="fill:#176b86">H →</text>
+<text x="118" y="952" font-size="18" font-weight="normal" style="fill:#176b86">CAP-004, CAP-015</text>
+<text x="68" y="981" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="118" y="981" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-009*, CAP-002</text>
+<text x="68" y="1010" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="118" y="1010" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-005</text>
+<text x="68" y="1091" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 25–29</text>
+</g>
+<g id="CAP-008"><rect x="622" y="841" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(642,861) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z" />
+  <path d="M20.054 15.987H3.946" />
+</g>
+<text x="692" y="872" font-size="17" font-weight="bold" style="fill:#176b86">CAP-008</text>
+<text x="692" y="898" font-size="20" font-weight="bold">Remote Access</text>
+<text x="642" y="952" font-size="18" font-weight="bold" style="fill:#176b86">H →</text>
+<text x="692" y="952" font-size="18" font-weight="normal" style="fill:#176b86">CAP-001, CAP-009, CAP-015, CAP-017</text>
+<text x="642" y="981" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="692" y="981" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-005</text>
+<text x="642" y="1091" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 30–34</text>
+</g>
+<g id="CAP-009"><rect x="1196" y="841" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(1216,861) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="16" y="16" width="6" height="6" rx="1" />
+  <rect x="2" y="16" width="6" height="6" rx="1" />
+  <rect x="9" y="2" width="6" height="6" rx="1" />
+  <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3" />
+  <path d="M12 12V8" />
+</g>
+<text x="1266" y="872" font-size="17" font-weight="bold" style="fill:#176b86">CAP-009</text>
+<text x="1266" y="898" font-size="20" font-weight="bold">Network Connectivity &amp; Core Network</text>
+<text x="1266" y="921" font-size="20" font-weight="bold">Services</text>
+<text x="1216" y="952" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="1266" y="952" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-014, CAP-016</text>
+<text x="1216" y="1091" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 35–36</text>
+</g>
+<g id="CAP-010"><rect x="48" y="1119" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(68,1139) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="2" y="4" width="20" height="16" rx="2" />
+  <path d="M10 4v4" />
+  <path d="M2 8h20" />
+  <path d="M6 4v4" />
+</g>
+<text x="118" y="1150" font-size="17" font-weight="bold" style="fill:#176b86">CAP-010</text>
+<text x="118" y="1176" font-size="20" font-weight="bold">Application Hosting</text>
+<text x="68" y="1230" font-size="18" font-weight="bold" style="fill:#176b86">H →</text>
+<text x="118" y="1230" font-size="18" font-weight="normal" style="fill:#176b86">CAP-009, CAP-015, CAP-004*</text>
+<text x="68" y="1259" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="118" y="1259" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-001</text>
+<text x="68" y="1288" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="118" y="1288" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-014</text>
+<text x="68" y="1369" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 37–41</text>
+</g>
+<g id="CAP-011"><rect x="622" y="1119" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(642,1139) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 22v-5" />
+  <path d="M15 8V2" />
+  <path d="M17 8a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1z" />
+  <path d="M9 8V2" />
+</g>
+<text x="692" y="1150" font-size="17" font-weight="bold" style="fill:#176b86">CAP-011</text>
+<text x="692" y="1176" font-size="20" font-weight="bold">Service Integration / Interoperability</text>
+<text x="642" y="1230" font-size="18" font-weight="bold" style="fill:#176b86">H →</text>
+<text x="692" y="1230" font-size="18" font-weight="normal" style="fill:#176b86">CAP-009, CAP-015</text>
+<text x="642" y="1259" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="692" y="1259" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-005</text>
+<text x="642" y="1369" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 42–44</text>
+</g>
+<g id="CAP-012"><rect x="1196" y="1119" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(1216,1139) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+  <path d="M18 17V9" />
+  <path d="M13 17V5" />
+  <path d="M8 17v-3" />
+</g>
+<text x="1266" y="1150" font-size="17" font-weight="bold" style="fill:#176b86">CAP-012</text>
+<text x="1266" y="1176" font-size="20" font-weight="bold">Reporting</text>
+<text x="1216" y="1230" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="1266" y="1230" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-005, CAP-006, CAP-018, CAP-014</text>
+<text x="1216" y="1369" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 45–48</text>
+</g>
+<g id="CAP-013"><rect x="48" y="1397" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(68,1417) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />
+  <path d="M12 22V12" />
+  <polyline points="3.29 7 12 12 20.71 7" />
+  <path d="m7.5 4.27 9 5.15" />
+</g>
+<text x="118" y="1428" font-size="17" font-weight="bold" style="fill:#176b86">CAP-013</text>
+<text x="118" y="1454" font-size="20" font-weight="bold">Software &amp; Patch Management</text>
+<text x="68" y="1508" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="118" y="1508" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-009, CAP-015</text>
+<text x="68" y="1537" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="118" y="1537" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-016, CAP-005, CAP-007</text>
+<text x="68" y="1647" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 49–53</text>
+</g>
+<g id="CAP-014"><rect x="622" y="1397" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(642,1417) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="10" />
+  <path d="M12 6v6l4 2" />
+</g>
+<text x="692" y="1428" font-size="17" font-weight="bold" style="fill:#176b86">CAP-014</text>
+<text x="692" y="1454" font-size="20" font-weight="bold">Time Synchronisation Services</text>
+<text x="642" y="1508" font-size="18" font-weight="bold" style="fill:#176b86">H →</text>
+<text x="692" y="1508" font-size="18" font-weight="normal" style="fill:#176b86">CAP-009, CAP-015*</text>
+<text x="642" y="1537" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="692" y="1537" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-016</text>
+<text x="642" y="1647" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 54–56</text>
+</g>
+<g id="CAP-015"><rect x="1196" y="1397" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(1216,1417) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+  <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+  <line x1="6" x2="6.01" y1="6" y2="6" />
+  <line x1="6" x2="6.01" y1="18" y2="18" />
+</g>
+<text x="1266" y="1428" font-size="17" font-weight="bold" style="fill:#176b86">CAP-015</text>
+<text x="1266" y="1454" font-size="20" font-weight="bold">Compute Provisioning / Compute Hosting</text>
+<text x="1216" y="1508" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="1266" y="1508" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-004*, CAP-009</text>
+<text x="1216" y="1537" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="1266" y="1537" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-016</text>
+<text x="1216" y="1647" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 57–59</text>
+</g>
+<g id="CAP-016"><rect x="48" y="1675" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(68,1695) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+  <circle cx="12" cy="12" r="3" />
+</g>
+<text x="118" y="1706" font-size="17" font-weight="bold" style="fill:#176b86">CAP-016</text>
+<text x="118" y="1732" font-size="20" font-weight="bold">Systems Administration &amp; Management</text>
+<text x="68" y="1786" font-size="18" font-weight="bold" style="fill:#176b86">H →</text>
+<text x="118" y="1786" font-size="18" font-weight="normal" style="fill:#176b86">CAP-001</text>
+<text x="68" y="1815" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="118" y="1815" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-008, CAP-009</text>
+<text x="68" y="1844" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="118" y="1844" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-005, CAP-017</text>
+<text x="68" y="1925" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 60–64</text>
+</g>
+<g id="CAP-017"><rect x="622" y="1675" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(642,1695) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+</g>
+<text x="692" y="1706" font-size="17" font-weight="bold" style="fill:#176b86">CAP-017</text>
+<text x="692" y="1732" font-size="20" font-weight="bold">Security</text>
+<text x="642" y="1786" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="692" y="1786" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-001, CAP-009*</text>
+<text x="642" y="1815" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="692" y="1815" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-005, CAP-006, CAP-013, CAP-014</text>
+<text x="642" y="1925" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 65–70</text>
+</g>
+<g id="CAP-018"><rect x="1196" y="1675" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(1216,1695) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+  <path d="M12 11h4" />
+  <path d="M12 16h4" />
+  <path d="M8 11h.01" />
+  <path d="M8 16h.01" />
+</g>
+<text x="1266" y="1706" font-size="17" font-weight="bold" style="fill:#176b86">CAP-018</text>
+<text x="1266" y="1732" font-size="20" font-weight="bold">Asset &amp; Configuration Management</text>
+<text x="1216" y="1786" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="1266" y="1786" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-002*</text>
+<text x="1216" y="1815" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="1266" y="1815" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-016, CAP-005</text>
+<text x="1216" y="1908" font-size="16" font-weight="bold" style="fill:#8b620c">Dedicated platform not in v1</text>
+<text x="1216" y="1925" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 71–73</text>
+</g>
+<g id="CAP-019"><rect x="48" y="1953" width="550" height="260" rx="12" fill="white" stroke="#ced8e2"/>
+<g transform="translate(68,1973) scale(1.5)" fill="none" stroke="#176b86" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="8" height="8" x="3" y="3" rx="2" />
+  <path d="M7 11v4a2 2 0 0 0 2 2h4" />
+  <rect width="8" height="8" x="13" y="13" rx="2" />
+</g>
+<text x="118" y="1984" font-size="17" font-weight="bold" style="fill:#176b86">CAP-019</text>
+<text x="118" y="2010" font-size="20" font-weight="bold">Governance / Approval Workflow Support</text>
+<text x="68" y="2064" font-size="18" font-weight="bold" style="fill:#8b620c">S →</text>
+<text x="118" y="2064" font-size="18" font-weight="normal" style="fill:#8b620c">CAP-001, CAP-011*</text>
+<text x="68" y="2093" font-size="18" font-weight="bold" style="fill:#7855a2">O →</text>
+<text x="118" y="2093" font-size="18" font-weight="normal" style="fill:#7855a2">CAP-005</text>
+<text x="68" y="2186" font-size="16" font-weight="bold" style="fill:#8b620c">CONDITIONAL / possibly OOS for v1</text>
+<text x="68" y="2203" font-size="12" font-weight="normal" style="fill:#687789">Matrix rows 74–76</text>
+</g>
+<text x="640" y="2000" font-size="21" font-weight="bold">INTERPRETATION &amp; SCOPE</text>
+<text x="640" y="2040" font-size="19" font-weight="normal">H: recorded technical prerequisite</text>
+<text x="640" y="2073" font-size="19" font-weight="normal">S: recorded partial, contextual or design-related reliance</text>
+<text x="640" y="2106" font-size="19" font-weight="normal">O: recorded operational / management reliance</text>
+<text x="640" y="2150" font-size="19" font-weight="normal">CAP-019 remains conditional; its recorded links are retained.</text>
+<text x="640" y="2183" font-size="19" font-weight="normal">No unrecorded links added. Absence of a link is not proof of independence.</text>
+<text x="48" y="2274" font-size="18" font-weight="normal">Source: Northwind-Solution-Capability-Catalogue.xlsx / Dependency Matrix!A2:H76</text>
+<text x="48" y="2307" font-size="18" font-weight="normal">Canonical names: Capabilities!A2:H20. Full reasons and basis: companion dependency register.</text>
+<text x="48" y="2337" font-size="16" font-weight="normal">Lucide icons • Custom dependency notation • Numbering continues HLD-01 conceptual architecture model</text>
+</svg>
