@@ -29,7 +29,7 @@
 | **Availability Model** | Single host, on-demand dual-boot |
 | **Current Workloads** | No permanent virtual machines deployed |
 | **Backup Status** | Not implemented |
-| **Administrative Access** | Proxmox web interface and local console; SSH and access controls pending verification |
+| **Administrative Access** | Proxmox web interface and local console |
 
 **Operational note:** HYP01 shares hardware with a Windows workstation. Windows is the default boot target; Proxmox must be selected manually using the firmware boot menu (F12).
 
@@ -218,30 +218,42 @@ The storage architecture and validation evidence are documented under NIM-10 and
 
 ## 5. Administrative Access
 
-### 5.1 Current Access Methods
+### 5.1 Management Interfaces
 
-| Access Method | Status | Notes |
-|---|---|---|
-| Proxmox Web Interface | Validated | `https://192.168.178.10:8006` |
-| Local Physical Console | Validated | Requires physical access and manual Proxmox boot |
-| Proxmox Web Shell | Available through platform; use not independently verified | Requires appropriate authenticated access |
-| SSH | Pending verification | Service and access policy not yet recorded |
-| Dedicated Administration Host | Not implemented | Planned for future implementation |
+- **Proxmox Web UI:** https://192.168.178.10:8006
+- **SSH:** TCP/22, active and enabled
+- **Physical console:** Available
+- **Administrative access model:** Temporary direct bootstrap access
 
-### 5.2 Authentication and Security
+### 5.2 Authentication & Permissions
 
-The following details require verification before NIM-15 acceptance:
+- **Proxmox administrator:** root@pam
+- **Authentication realms:** PAM and PVE
+- **Explicit Proxmox ACL assignments:** None
+- **MFA:** Not configured for root@pam
 
-- Configured Proxmox authentication realms and administrative accounts.
-- User roles and privilege assignments.
-- SSH service state and effective configuration.
-- Root login and password/key authentication policies.
-- Firewall configuration and management access restrictions.
-- Multi-factor authentication configuration, where applicable.
+### 5.3 SSH Configuration
 
-No credentials, private keys, recovery secrets or full personal account details should be committed to the public repository.
+- **Listening interfaces:** All IPv4 and IPv6 interfaces
+- **Root login:** Permitted
+- **Password authentication:** Enabled
+- **Public-key authentication:** Enabled
 
-**Verification status:** Pending read-only inspection on HYP01.
+### 5.4 Firewall & Access Restrictions
+
+- **Legacy Proxmox firewall:** Disabled
+- **nftables-based Proxmox firewall:** Active and enabled
+- **Active nftables rules:** None
+- **Management access restrictions:** No nftables restrictions currently enforced
+
+### 5.5 Outstanding Actions
+
+- Establish the approved administrative access path through JUMP01.
+- Review and harden SSH authentication.
+- Implement appropriate management firewall restrictions.
+- Introduce MFA where required by the approved security design.
+- Restrict or remove temporary direct administration once
+  replacement and recovery access have been validated.
 
 ## 6. Dependencies & Limitations
 

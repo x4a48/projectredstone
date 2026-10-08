@@ -21,3 +21,13 @@ The temporary management network and direct administrative access are consistent
 - Update the System Record to clarify that final management addressing is determined by the downstream network design.
 
 **Disposition:** No confirmed material deviation currently requires redesign of the HYP01 foundation. Final NIM-15 acceptance remains subject to the outstanding verification and documentation updates.
+
+### NIM-15-F01 — Bootstrap SSH Authentication ###
+HYP01 currently permits direct root SSH authentication using passwords or public keys. SSH listens on all IPv4 and IPv6 interfaces.
+This configuration is retained temporarily during the infrastructure bootstrap phase. The effective network exposure remains subject to firewall verification.
+Disposition: Review and harden SSH authentication when implementing the approved administrative access architecture. Validate alternative administrative and recovery access before disabling bootstrap authentication.
+
+## NIM-15-F02 — Management Firewall Not Enforcing nftables Rules ##
+HYP01 currently has no active nftables rules despite the proxmox-firewall service being active and enabled.
+SSH and the Proxmox management interface listen on all interfaces. Access may still be constrained by upstream network controls, but no nftables restrictions are currently applied locally.
+Disposition: Retain as a documented bootstrap security finding. Review and implement appropriate firewall restrictions as part of the approved administrative access and network security design.
