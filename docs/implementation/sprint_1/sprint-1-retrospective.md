@@ -36,6 +36,8 @@ This created additional documentation work at sprint closure and increased the r
 
 Sprint 2 will integrate repository documentation directly into the NIM lifecycle.
 
+Documentation should be captured alongside implementation, rather than reconstructed retrospectively at the end of a sprint.
+
 ---
 
 ## Keep Doing

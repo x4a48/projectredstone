@@ -65,7 +65,7 @@ The NVMe device containing Windows was not selected or modified.
 
 ## Filesystem Selection
 
-**XFS** was selected for the Proxmox installation filesystem.
+**ext4** was selected for the Proxmox installation filesystem.
 
 The Proxmox installer created the required system storage configuration on the designated HYP01 system disk.
 
